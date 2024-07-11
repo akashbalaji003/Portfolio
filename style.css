@@ -11,7 +11,18 @@
 html {
     scroll-behavior: smooth;
 }
+.navbar .menu li button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
 
+.navbar .menu li button:hover {
+    color: #008080;
+}
 /* Custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
