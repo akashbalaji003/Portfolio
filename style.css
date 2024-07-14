@@ -11,18 +11,8 @@
 html {
     scroll-behavior: smooth;
 }
-.navbar .menu li button {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-}
 
-.navbar .menu li button:hover {
-    color: #008080;
-}
+
 /* Custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -196,7 +186,25 @@ section .title::after {
 /* Home section styling */
 .home {
     display: flex;
-    background: url("banner.jpg") no-repeat center;
+    /* background: url("banner.jpg") no-repeat center; */
+    /* background: linear-gradient(135deg, rgb(2, 2, 2), rgb(56, 65, 65), rgb(194, 194, 194)); */
+    /* background-image: linear-gradient(
+        rgba(2, 2, 2, 1) 0%,
+        rgba(2, 2, 2, 0.3) 50%,
+        rgba(2, 2, 2, 0.15) 65%,
+        rgba(2, 2, 2, 0.075) 75.5%,
+        rgba(2, 2, 2, 0.037) 82.85%,
+        rgba(2, 2, 2, 0.019) 88%,
+        rgba(2, 2, 2, 0) 100%
+    ); */
+
+    background-image: linear-gradient(
+        135deg,
+        rgba(34, 34, 34, 1) 0%,
+        rgba(51, 51, 51, 0.8) 50%,
+        rgba(68, 68, 68, 0.6) 75%,
+        rgba(85, 85, 85, 0.4) 100%
+    );
     height: 100vh;
     color: #fff;
     min-height: 500px;
