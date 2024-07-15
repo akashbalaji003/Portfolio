@@ -443,7 +443,7 @@ section .title::after {
 
 /* Skills section styling */
 .skills .title::after {
-    content: "what i know";
+    content: "";
 }
 
 .skills .skills-content .column {
@@ -647,7 +647,7 @@ section .title::after {
 
 /* Contact section styling */
 .contact .title::after {
-    content: "get in touch";
+    content: "";
 }
 
 .contact .contact-content {
