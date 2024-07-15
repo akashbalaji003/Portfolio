@@ -65,3 +65,8 @@ $(document).ready(function(){
         }
     });
 });
+
+// Dark mode toggle script
+$('#dark-mode-toggle').click(function(){
+    $('body').toggleClass('dark-mode');
+});
