@@ -65,8 +65,27 @@ $(document).ready(function(){
         }
     });
 });
-
 // Dark mode toggle script
 $('#dark-mode-toggle').click(function(){
     $('body').toggleClass('dark-mode');
 });
+
+document.oncontextmenu = () => {
+    return false;
+}
+
+document.onekeydown = e => {
+    if(e.key == "F12") {
+        return false;
+    }
+    if(e.ctrlKey && e.key == "u") {
+        return false;
+    }
+    if(e.ctrlKey && e.key == "c") {
+        return false;
+    }
+    if(e.ctrlKey && e.key == "v") {
+        return false;
+    }
+    
+}
