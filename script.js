@@ -99,5 +99,5 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         loader.style.display = "none";
         mainContent.style.display = "block";
-    }, 3000); // 3000 milliseconds = 3 seconds
+    }, 5000); // 3000 milliseconds = 3 seconds
 });
