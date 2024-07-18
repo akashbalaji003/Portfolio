@@ -90,6 +90,14 @@ document.onekeydown = e => {
     
 }
 var loader =  document.getElementById("preloader")
-window.addEventListener("load", function() {
-    loader.style.display = "none";
-})
+
+document.addEventListener("DOMContentLoaded", function() {
+    var loader = document.getElementById("preloader");
+    var mainContent = document.getElementById("main-content");
+
+    // Set a timeout to hide the preloader after 3 seconds
+    setTimeout(function() {
+        loader.style.display = "none";
+        mainContent.style.display = "block";
+    }, 2000); // 3000 milliseconds = 3 seconds
+});
