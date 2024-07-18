@@ -40,12 +40,12 @@ section {
     margin: auto;
 }
 
-.about, .services, .skills, .teams, .contact, footer {
+.about, .experience, .skills, .teams, .contact, footer {
     font-family: 'Poppins', sans-serif;
 }
 
 .about .about-content,
-.services .serv-content,
+.experience .serv-content,
 .skills .skills-content,
 .contact .contact-content {
     display: flex;
@@ -129,7 +129,7 @@ section .title::after {
 
 .navbar .menu li a {
     display: block;
-    color: #fff;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -315,7 +315,7 @@ section .title::after {
 }
 
 /* Services section styling */
-.services {
+.experience {
     color: #fff;
     background-image: linear-gradient(
         135deg,
@@ -327,23 +327,23 @@ section .title::after {
     padding: 60px 0;
 }
 
-.services .title::before {
+.experience .title::before {
     background: #fff;
 }
 
-.services .title::after {
+.experience .title::after {
     background: #111;
     content: "";
 }
 
-.services .serv-content {
+.experience .serv-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; /* This will allow wrapping on smaller screens */
     padding: 20px 0;
 }
 
-.services .card {
+.experience .card {
     width: calc(33% - 20px); /* Adjust width to fit 4 cards in a row */
     background: #000000;
     text-align: center;
@@ -355,36 +355,36 @@ section .title::after {
     flex:1 1 auto;  
 }
 
-.services .card:hover {
+.experience .card:hover {
     background: #008080;
 }
 
-.services .card .box {
+.experience .card .box {
     transition: all 0.3s ease;
 }
 
-.services .card:hover .box {
+.experience .card:hover .box {
     transform: scale(1.05);
 }
 
-.services .card i {
+.experience .card i {
     font-size: 50px;
     color: #008080;
     transition: color 0.3s ease;
 }
 
-.services .card:hover i {
+.experience .card:hover i {
     color: #008080;
 }
 
-.services .card .text {
+.experience .card .text {
     font-size: 24px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 10px;
 }
 
-.services .card p {
+.experience .card p {
     color: #ddd;
     margin-bottom: 15px;
     line-height: 1.6;
@@ -683,7 +683,7 @@ section .title::after {
 }
 
 .contact .contact-content .info .sub-title {
-    color: #000000;
+    color: #3f3f3f;
     font-size: 16px;
 }
 
@@ -772,19 +772,19 @@ footer span a:hover {
 /* Responsive media query start */
 /* Media Queries */
 @media (max-width: 1200px) {
-    .services .card {
+    .experience .card {
         width: calc(33.33% - 20px); /* 3 cards per row */
     }
 }
 
 @media (max-width: 992px) {
-    .services .card {
+    .experience .card {
         width: calc(50% - 20px); /* 2 cards per row */
     }
 }
 
 @media (max-width: 768px) {
-    .services .card {
+    .experience .card {
         width: calc(100% - 20px); /* 1 card per row */
     }
 }
@@ -856,7 +856,7 @@ footer span a:hover {
     .about .about-content .right {
         flex: 100%;
     }
-    .services .serv-content .card {
+    .experience .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -880,7 +880,7 @@ footer span a:hover {
     .home .home-content a {
         font-size: 20px;
     }
-    .services .serv-content .card {
+    .experience .serv-content .card {
         width: 100%;
     }
 }
@@ -953,4 +953,13 @@ body.dark-mode .projects {
 body.dark-mode .scroll-up-btn {
     background-color: #333333;
     color: #ffffff;
+}
+
+#preloader{
+    background: #000000 url(loader.gif) no-repeat center center;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
