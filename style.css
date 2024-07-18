@@ -956,7 +956,7 @@ body.dark-mode .scroll-up-btn {
 }
 
 #preloader{
-    background: #000000 url(loader.gif) no-repeat center center;
+    background: #000000 url(circleloader.gif) no-repeat center center;
     background-position: center;
     height: 100vh;
     width: 100%;
