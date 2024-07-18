@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -18,9 +19,11 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
 </head>
 <body>
+
+    <div id ="preloader"></div>
+
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -31,7 +34,7 @@
                 <li><a href="#" id="dark-mode-toggle" class="menu-btn">Dark Mode</a></li>
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Experience</a></li>
+                <li><a href="#experience" class="menu-btn">Experience</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#projects" class="menu-btn">Projects</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
@@ -48,6 +51,7 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Akash Balaji</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
+                <!-- <a href="#">Hire me</a> -->
             </div>
         </div>
     </section>
@@ -68,8 +72,9 @@
         </div>
     </section>
     
-    <!-- services section start -->
-    <section class="services" id="services">
+    
+    <!-- experience section start -->
+    <section class="experience" id="experience">
         <div class="max-width">
             <h2 class="title">Experience</h2>
             <div class="serv-content owl-carousel">
@@ -112,6 +117,7 @@
             </div>
         </div>
     </section>
+    
     
     <!-- skills section start -->
     <section class="skills" id="skills">
@@ -173,6 +179,20 @@
                         </div>
                         <div class="line react"></div>
                     </div>
+                    <div class="bars">
+                        <!-- <div class="info">
+                            <span>Node.js</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="line nodejs"></div>
+                    </div> -->
+                    <!-- <div class="bars">
+                        <div class="info">
+                            <span>Angular</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line angular"></div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -227,6 +247,8 @@
     </div>
 </section>
 
+    
+
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
@@ -241,13 +263,6 @@
                             <div class="info">
                                 <div class="head">Name</div>
                                 <div class="sub-title">Akash Balaji</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">801 Toftrees Ave, State College, PA</div>
                             </div>
                         </div>
                         <div class="row">
@@ -297,5 +312,6 @@
         <span>Created By <a href="akashbalaji.com">Akash Balaji</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
     </footer>
     <script src="script.js"></script>
+
 </body>
 </html>
